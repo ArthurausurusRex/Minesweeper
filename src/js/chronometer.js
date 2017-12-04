@@ -32,7 +32,9 @@ class Chronometer extends React.Component{
             this.setState({diff : 0})
         }
         else if (nextProps['stateOfGame'] === 'ended' && this.props['stateOfGame'] === 'running'){
-            this.props.getScore(this.state.diff);
+            if (this.state.diff){
+                this.props.getScore(this.state.diff);
+            }
             clearInterval(this.state.timerId);
         }
 
