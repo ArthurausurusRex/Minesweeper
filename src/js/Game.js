@@ -83,7 +83,7 @@ class Game extends React.Component {
         this.setState({difficulty : difficulty});
         switch(difficulty) {
             case "beginner":
-                this.setState(setDifficulty(2, 9, 9));
+                this.setState(setDifficulty(10, 9, 9));
                 break;
             case "intermediate" :
                 this.setState(setDifficulty(40, 16, 16));
