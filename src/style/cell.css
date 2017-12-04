@@ -1,0 +1,43 @@
+.cell {
+    background: #fff;
+    border: 1px solid #999;
+    float: left;
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 34px;
+    height: 34px;
+    margin-right: -1px;
+    margin-top: -1px;
+    padding: 0;
+    text-align: center;
+    width: 34px;
+    box-shadow: 0px 0px 6px gray;
+}
+
+.hidden {
+    background: lightblue;
+}
+
+.losing{
+    background-color: lightcoral;
+    animation: mymove 1s infinite;
+}
+
+@keyframes mymove {
+    from {
+        background-color: lightcoral;
+    }
+    to {
+        background-color: white;
+    }
+}
+
+.hidden:hover{
+    box-shadow: 0px 0px 3px darkgray;
+    transform: scale(1.01, 1.01);
+
+}
+
+.cell:focus {
+    outline: none;
+}
