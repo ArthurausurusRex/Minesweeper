@@ -197,6 +197,9 @@ class Game extends React.Component {
                             />
                         </RadioButtonGroup>
                     </div>
+                    <div>
+                        hint : try clicking on a <br/>number surrounded<br/> by enough flags
+                    </div>
                 </div>
                 <div>
                     <AlertDialogue
