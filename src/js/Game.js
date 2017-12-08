@@ -4,7 +4,7 @@ import Board from './board' ;
 import GameInfos from './game-infos';
 import {RadioButton, RadioButtonGroup} from 'material-ui/RadioButton';
 import AlertDialogue from './alert-dialog'
-import GetScoresRequest from './requests';
+//import GetScoresRequest from './requests';
 
 class Game extends React.Component {
     constructor(props) {

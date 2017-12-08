@@ -1,3 +1,4 @@
+/*
 import React, { Component } from 'react';
 import Request from 'react-http-request';
 
@@ -49,4 +50,4 @@ export default class PostRequest extends Component {
             </Request>
         );
     }
-}
+}*/
