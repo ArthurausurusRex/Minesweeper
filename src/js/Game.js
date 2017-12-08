@@ -4,6 +4,7 @@ import Board from './board' ;
 import GameInfos from './game-infos';
 import {RadioButton, RadioButtonGroup} from 'material-ui/RadioButton';
 import AlertDialogue from './alert-dialog'
+import GetScoresRequest from './requests';
 
 class Game extends React.Component {
     constructor(props) {
@@ -226,6 +227,19 @@ class Game extends React.Component {
                         onClick = {(i,j) => this.handleClick(i,j)}
                         onContextMenu = {(i,j)=> this.handleRightClick(i,j)}
                     />
+                </div>
+                <div style={{display:'flex',
+                    flexDirection:'column', boxShadow: '#999999 0px 0px 5px', padding:'5px'}}>
+                    <h3 style={{margin:'3px', alignSelf:'center'}}>High Scores</h3>
+                    <div>
+                        Beginner :
+                    </div>
+                    <div>
+                        Intermediate :
+                    </div>
+                    <div>
+                        Expert :
+                    </div>
                 </div>
             </div>
         );
